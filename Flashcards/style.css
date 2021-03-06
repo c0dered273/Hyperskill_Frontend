@@ -1,0 +1,69 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #2f4f4f;
+    background-image: url("https://stepik.org/media/attachments/lesson/374893/world.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 1200px;
+    background-position: 50% 30px;
+}
+
+.header {
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.page {
+    position: absolute;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    perspective: 1200px;
+}
+
+.item {
+    margin: 4px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.front {
+    background-color: #f9efe5;
+    color: #ff7c02;
+    z-index: 2;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.back {
+    background-color: #ff7c02;
+    color: #f9efe5;
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.item:hover {
+    transform: rotateY(180deg);
+}

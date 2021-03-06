@@ -1,0 +1,64 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: darkgreen;
+}
+
+.container {
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+.white-keys {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 1;
+}
+
+.black-keys {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.white-keys kbd {
+    display: inline-block;
+    width: 14%;
+    background-color: white;
+    border-color: gray;
+    border-style: solid;
+    margin-left: 1px;
+    padding-top: 32%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.black-keys kbd {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 10%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 18%;
+    padding-bottom: 5%;
+}
+
+.W {
+    margin-left: 9.3%;
+}
+
+.E, .Y, .U {
+    margin-left: 3.8%;
+}
+
+.T {
+    margin-left: 18.1%;
+}
